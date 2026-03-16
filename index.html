@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Golden Gate Travels offers luxury travel experiences for discerning travellers seeking elegance, comfort, and unforgettable destinations."
+  />
+  <title>Golden Gate Travels | Luxury Travel Experiences</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       HEADER / NAVIGATION
+       Edit logo, company name and nav labels here
+  ========================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand" aria-label="Golden Gate Travels homepage">
+        <!-- EDITABLE LOGO IMAGE -->
+        <img src="GoldenGateIntro.png" alt="Golden Gate Travels logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-title">Golden Gate Travels</span>
+          <span class="brand-subtitle">Luxury Without Compromise</span>
+        </div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#booking">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-gold nav-button">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO SECTION
+         Edit headline, strapline, button text and background media here
+    ========================== -->
+    <section class="hero">
+      <!-- Replace this hero video later by swapping the source below -->
+      <video class="hero-video" autoplay muted loop playsinline poster="media/couple-shot.jpg">
+        <source src="media/drone-coast.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="section-label">Curated Luxury Escapes</p>
+        <h1>Travel beyond ordinary.</h1>
+        <p class="hero-text">
+          Experience premium destinations, handpicked five-star stays, and unforgettable journeys
+          designed for travellers who value elegance, comfort, and prestige.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-gold">Book Now</a>
+          <a href="#destinations" class="btn btn-outline-light">View Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+         Edit company story, mission and audience message here
+    ========================== -->
+    <section class="section section-light" id="about">
+      <div class="container split-grid">
+        <div>
+          <p class="section-label">About Us</p>
+          <h2>Aspirational travel for an audience that values quality.</h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            Golden Gate Travels creates refined travel experiences for clients who value comfort,
+            exclusivity, and impeccable detail. From iconic coastal retreats to elegant city
+            escapes, every journey is designed to feel seamless, aspirational, and unforgettable.
+          </p>
+          <p>
+            Our brand combines trusted service with sophisticated presentation, offering curated
+            packages that reflect the expectations of a discerning audience. Every destination,
+            image, and message is chosen to inspire confidence and desire.
+          </p>
+
+          <div class="value-grid">
+            <article class="value-card">
+              <h3>Luxury</h3>
+              <p>Premium destinations, five-star stays, and elegant experiences.</p>
+            </article>
+            <article class="value-card">
+              <h3>Trust</h3>
+              <p>Professional presentation, clear booking, and reassuring brand identity.</p>
+            </article>
+            <article class="value-card">
+              <h3>Exclusivity</h3>
+              <p>Curated packages designed to feel unique, aspirational, and desirable.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FEATURED DESTINATIONS
+         Replace destination names, text, prices and images here
+    ========================== -->
+    <section class="section section-dark" id="destinations">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Featured Destinations</p>
+          <h2>Destinations that signify status, beauty, and escape.</h2>
+          <p>
+            These locations use travel advertising conventions such as scenic imagery, premium copy,
+            and high-value pricing to create aspiration and desirability.
+          </p>
+        </div>
+
+        <div class="card-grid destination-grid">
+          <article class="destination-card">
+            <!-- Replace this destination image later by updating the source below -->
+            <img
+              src="media/rocks-water.jpg"
+              alt="Santorini inspired rocky coastline with turquoise water"
+            />
+            <div class="card-body">
+              <h3>Santorini, Greece</h3>
+              <p>Sun-drenched terraces, crystalline waters, and effortless Mediterranean elegance.</p>
+              <div class="card-footer">
+                <span>From £2,450</span>
+                <button class="text-button booking-trigger" data-destination="Santorini, Greece">Book This</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <!-- Replace this destination image later by updating the source below -->
+            <img
+              src="media/dubai-skyline.jpg.jpg"
+              alt="Stylish traveller under an umbrella in a luxury Dubai setting"
+            />
+            <div class="card-body">
+              <h3>Dubai, UAE</h3>
+              <p>Contemporary luxury, iconic skylines, and five-star experiences at every turn.</p>
+              <div class="card-footer">
+                <span>From £2,980</span>
+                <button class="text-button booking-trigger" data-destination="Dubai, UAE">Book This</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <!-- Replace this destination image later by updating the source below -->
+            <img
+              src="media/eiffel-tower.jpg.jpg"
+              alt="Paris destination card image with elegant rocky shoreline"
+            />
+            <div class="card-body">
+              <h3>Paris, France</h3>
+              <p>Timeless romance, cultural richness, and understated Parisian sophistication.</p>
+              <div class="card-footer">
+                <span>From £1,890</span>
+                <button class="text-button booking-trigger" data-destination="Paris, France">Book This</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <!-- Replace this destination image later by updating the source below -->
+            <img
+              src="media/waterfall.jpg"
+              alt="Swiss Alps destination card image with dramatic waterfall scenery"
+            />
+            <div class="card-body">
+              <h3>Swiss Alps</h3>
+              <p>Alpine serenity, private luxury, and breathtaking scenery in every direction.</p>
+              <div class="card-footer">
+                <span>From £3,250</span>
+                <button class="text-button booking-trigger" data-destination="Swiss Alps">Book This</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         MEDIA GALLERY
+         Replace images with your own travel photography or coursework assets
+    ========================== -->
+    <section class="section section-light" id="gallery">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Luxury Gallery</p>
+          <h2>Moments of beauty, captured with intention.</h2>
+          <p>
+            A curated collection of travel imagery designed to reflect elegance, atmosphere, and the promise of escape.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Replace these gallery images later by updating each source below -->
+          <img
+            src="media/rocks-water.jpg"
+            alt="Rocky shoreline with clear blue water"
+          />
+          <img
+            src="media/rocks-water2.jpg"
+            alt="Luxury coastal rock formations at golden light"
+          />
+          <img
+            src="media/umbrella-shot.jpg"
+            alt="Traveller holding an umbrella in a cinematic street scene"
+          />
+          <img
+            src="media/waterfall.jpg"
+            alt="Towering waterfall surrounded by lush landscape"
+          />
+          <img
+            src="media/couple-shot.jpg"
+            alt="Couple framed in a luxury travel portrait"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         VIDEO SECTION
+         Replace iframe URL or use your own MP4/video embed here
+    ========================== -->
+    <section class="section section-navy" id="video">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Promotional Video</p>
+          <h2>Moving image brings the journey to life.</h2>
+          <p>
+            Discover the mood, pace, and atmosphere of Golden Gate Travels through cinematic visuals designed to inspire the next escape.
+          </p>
+        </div>
+
+        <div class="video-frame luxury-video-frame">
+          <!-- Replace this promotional video later by swapping the source below -->
+          <video controls preload="metadata" poster="media/waterfall.jpg">
+            <source src="media/waterfall.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         TRAVEL HIGHLIGHTS
+         Replace these highlight videos later by swapping each source below
+    ========================== -->
+    <section class="section section-light" id="highlights">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Travel Highlights</p>
+          <h2>Moments designed to feel polished, elevated, and unforgettable.</h2>
+          <p>
+            From quiet coastal luxury to sunlit escapes, these highlights capture the elegance and ease at the heart of the Golden Gate experience.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="video-frame highlight-frame">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="media/flight-shot-coast.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CINEMATIC CLIP
+         Replace this cinematic feature video later by swapping the source below
+    ========================== -->
+    <section class="section section-dark cinematic-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">A Journey Begins</p>
+          <h2>A cinematic introduction to your next escape.</h2>
+        </div>
+      </div>
+
+      <div class="cinematic-video-shell">
+        <div class="container">
+          <div class="video-frame cinematic-frame">
+            <!-- This cinematic section uses media/flight-shot-coast.mp4 -->
+            <!-- Replace this cinematic video later by swapping the source below -->
+            <video autoplay muted loop playsinline preload="metadata" poster="media/couple-shot.jpg">
+              <source src="media/luxury-resort-sunset.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SPECIAL OFFERS / PACKAGES
+         Edit package names, prices and bullets here
+    ========================== -->
+    <section class="section section-gold" id="offers">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Signature Packages</p>
+          <h2>Signature packages crafted for exceptional travel.</h2>
+        </div>
+
+        <div class="card-grid offer-grid">
+          <article class="offer-card featured-offer">
+            <span class="offer-tag">Most Popular</span>
+            <h3>The Heritage Escape</h3>
+            <p class="offer-price">£2,750 per person</p>
+            <ul>
+              <li>5-star accommodation</li>
+              <li>Private guided cultural tour</li>
+              <li>Airport lounge access</li>
+              <li>Luxury dining experience</li>
+            </ul>
+            <button class="btn btn-dark booking-trigger" data-destination="The Heritage Escape">Reserve Package</button>
+          </article>
+
+          <article class="offer-card">
+            <h3>The Coastal Indulgence</h3>
+            <p class="offer-price">£3,100 per person</p>
+            <ul>
+              <li>Ocean-view suite</li>
+              <li>Spa and wellness access</li>
+              <li>Luxury transfer service</li>
+              <li>Sunset cruise experience</li>
+            </ul>
+            <button class="btn btn-outline-dark booking-trigger" data-destination="The Coastal Indulgence">Reserve Package</button>
+          </article>
+
+          <article class="offer-card">
+            <h3>The Executive City Break</h3>
+            <p class="offer-price">£1,950 per person</p>
+            <ul>
+              <li>Boutique hotel stay</li>
+              <li>VIP city experience</li>
+              <li>Breakfast and concierge</li>
+              <li>Priority travel support</li>
+            </ul>
+            <button class="btn btn-outline-dark booking-trigger" data-destination="The Executive City Break">Reserve Package</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         TESTIMONIALS
+         Replace review text, names and locations here
+    ========================== -->
+    <section class="section section-dark" id="reviews">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Customer Reviews</p>
+          <h2>Testimonials reinforce trust and premium appeal.</h2>
+          <p>
+            Positive audience feedback helps present the brand as reliable, successful, and worth the price.
+          </p>
+        </div>
+
+        <div class="card-grid testimonial-grid" id="reviewList">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“Elegant branding, excellent communication, and a genuinely luxurious experience from start to finish.”</p>
+            <h3>Amelia R.</h3>
+            <span>London</span>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“The entire holiday felt exclusive and effortless. It looked premium and delivered on that promise.”</p>
+            <h3>Daniel C.</h3>
+            <span>Manchester</span>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>“Aspirational, polished, and trustworthy. Exactly the kind of luxury company we wanted to book with.”</p>
+            <h3>Sophia T.</h3>
+            <span>Bath</span>
+          </article>
+        </div>
+
+        <!-- SIMPLE REVIEW SUBMISSION FORM -->
+        <div class="review-panel">
+          <h3>Add a Review</h3>
+          <form id="reviewForm" class="review-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="reviewName">Name</label>
+                <input type="text" id="reviewName" name="reviewName" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="reviewLocation">Location</label>
+                <input type="text" id="reviewLocation" name="reviewLocation" placeholder="Your city" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="reviewText">Review</label>
+              <textarea id="reviewText" name="reviewText" rows="4" placeholder="Write your review here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Submit Review</button>
+            <p class="form-message" id="reviewMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         BOOKING FORM
+         Functional front-end form
+         You can later connect this to email or a database
+    ========================== -->
+    <section class="section section-light" id="booking">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-label">Book Your Journey</p>
+          <h2>Begin planning your next exceptional escape.</h2>
+          <p>
+            Complete the form below to enquire about curated destinations, preferred dates, and bespoke travel arrangements.
+          </p>
+        </div>
+
+        <form id="bookingForm" name="booking" method="POST" data-netlify="true" action="/thank-you.html" class="booking-form">
+          <input type="hidden" name="form-name" value="booking">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="destination">Destination / Package</label>
+              <select id="destination" name="destination" required>
+                <option value="">Select an option</option>
+                <option value="Santorini, Greece">Santorini, Greece</option>
+                <option value="Dubai, UAE">Dubai, UAE</option>
+                <option value="Paris, France">Paris, France</option>
+                <option value="Swiss Alps">Swiss Alps</option>
+                <option value="The Heritage Escape">The Heritage Escape</option>
+                <option value="The Coastal Indulgence">The Coastal Indulgence</option>
+                <option value="The Executive City Break">The Executive City Break</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="travelDate">Preferred Travel Date</label>
+              <input type="date" id="travelDate" name="travelDate" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="travellers">Number of Travellers</label>
+              <input type="number" id="travellers" name="travellers" min="1" max="20" placeholder="e.g. 2" required />
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget range</option>
+                <option value="£1,500 - £2,000">£1,500 - £2,000</option>
+                <option value="£2,000 - £3,000">£2,000 - £3,000</option>
+                <option value="£3,000 - £5,000">£3,000 - £5,000</option>
+                <option value="£5,000+">£5,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="requests">Special Requests</label>
+            <textarea
+              id="requests"
+              name="requests"
+              rows="5"
+              placeholder="Room preferences, celebrations, transport requests, or bespoke details..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold">Submit Booking Enquiry</button>
+          <p class="form-message" id="bookingMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+         Edit contact details and business info here
+    ========================== -->
+    <section class="section section-white" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact Us</p>
+          <h2>Speak to our travel specialists.</h2>
+          <p>
+            Our team offers attentive guidance, expert planning, and a reassuringly personal service from first enquiry to final departure.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <p><strong>Email:</strong> enquiries@goldengatetravels.co.uk</p>
+          <p><strong>Phone:</strong> +44 (0)20 1234 5678</p>
+          <p><strong>Address:</strong> 25 Regent Square, London, United Kingdom</p>
+          <p><strong>Opening Hours:</strong> Monday–Saturday, 9:00am–6:00pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       Edit social links and policies here
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Golden Gate Travels</h3>
+        <p>
+          Luxury travel experiences designed to inspire confidence, aspiration, and unforgettable memories.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Policies</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Golden Gate Travels. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- EXTERNAL JS -->
+  <script src="script.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
